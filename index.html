@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -47,7 +47,7 @@
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Jessica Wang</h1>
         <p class="section__text__p2">
-          a junior in Computer Science Major at Texas A&M University.
+          Computer Science student at Texas A&M University.
         </p>
         <div class="btn-container">
           <button
@@ -96,14 +96,22 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Pursuing B.S. in Computer Science with Minor in Statistics</p>
+              <p>Pursuing B.S. in Computer Science</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience-icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Full-stack development and machine learning projects</p>
             </div>
           </div>
           <div class="text-container">
             <p>
               My name is Jessica, and I'm from Austin, Texas. I'm currently a
-              pursuing a Bachelor of Science in Computer Science with a Minor in
-              Statistics at Texas A&M University. I have a strong passion for
+              pursuing a Bachelor of Science in Computer Science at Texas A&M University. I have a strong passion for
               software development, particularly in full-stack development, and
               I'm also deeply interested in machine learning. I enjoy building
               projects that solve real-world problems and constantly seek
@@ -116,13 +124,86 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#experience'"
       />
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
+        <div class="timeline-wrapper">
+          <h2 class="experience-sub-title">Work Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">August 2026 – present</span>
+                <h3>Software Developer Co-op</h3>
+                <p>IBM</p>
+                <ul>
+                  <li>Evaluated IBM’s internal AI model, Bob, by benchmarking its performance across 1,000+ software engineering tasks.</li>
+                  <li>Analyzed environment generation frameworks to identify performance gaps and improve internal benchmark pipelines.</li>
+                  <li>Executed benchmark tasks using internal frameworks to evaluate AI performance and reliability.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">June 2026 – August 2026</span>
+                <h3>Software Engineer Intern</h3>
+                <p>ERCOT</p>
+                <ul>
+                  <li>Developed test automation for ERCOT’s mission-critical power grid systems supporting over 27 million Texas customers.</li>
+                  <li>Built a reusable upload/download utility for an internal test automation framework, eliminating duplicate code across teams.</li>
+                  <li>Engineered and unit-tested automated access revocation, accelerating deactivation 10× and reducing compliance risk.</li>
+                  <li>Applied prompt engineering with Claude, ChatGPT, and GitHub Copilot for development and debugging.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">November 2025 – January 2026</span>
+                <h3>Software Engineer Intern</h3>
+                <p>Synexus Labs</p>
+                <ul>
+                  <li>Analyzed a 10k+ line React codebase and identified integration gaps for an AI-powered debugging tool.</li>
+                  <li>Designed a scalable Python and Supabase backend integration workflow for a pre-launch C++ debugging tool.</li>
+                  <li>Collaborated in an Agile team of six developers leveraging GitHub Projects for sprints, issue tracking, and code reviews.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">January 2025 – August 2025</span>
+                <h3>AI/ML Undergraduate Researcher</h3>
+                <p>Texas A&amp;M University</p>
+                <ul>
+                  <li>Built a domain-specific RAG chatbot using semantic search and embeddings from 50+ agricultural research papers.</li>
+                  <li>Fine-tuned a BERT model in PyTorch on 1,000+ Q&amp;A pairs, improving retrieval accuracy by ~30% over keyword search.</li>
+                  <li>Built a software platform streamlining access to professional guidance for farmers, cutting decision-making time by 20%.</li>
+                  <li>Co-authored an abstract accepted after formal review, helping secure institutional support for continued development.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">January 2022 – August 2024</span>
+                <h3>General Manager &amp; Web Developer</h3>
+                <p>River of Life SPA LLC</p>
+                <ul>
+                  <li>Designed and deployed a new responsive company website using React, increasing online visibility and website traffic by 20%.</li>
+                  <li>Launched strategic digital marketing campaigns across Google Ads, Facebook Ads, and Groupon, generating $100k in revenue.</li>
+                  <li>Restructured employee scheduling, reducing staffing downtime by 15% while maintaining peak-hour coverage.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="about-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
@@ -217,7 +298,7 @@
                 />
                 <div>
                   <h3>Java</h3>
-                  <p>Experiencec</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -250,7 +331,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href = './#projects'"
       />
     </section>
     <section id="projects">
@@ -270,13 +351,17 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/aggie-coding-club/Sizzler'"
+                onclick="
+                  location.href = 'https://github.com/aggie-coding-club/Sizzler'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/aggie-coding-club/Sizzler'"
+                onclick="
+                  location.href = 'https://github.com/aggie-coding-club/Sizzler'
+                "
               >
                 Live Demo
               </button>
@@ -296,13 +381,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/'"
               >
                 Live Demo
               </button>
@@ -320,25 +405,55 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jwang0521/dairy-AI-chatbot'"
+                onclick="
+                  location.href =
+                    'https://github.com/jwang0521/dairy-AI-chatbot'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href = 'https://github.com/'"
               >
                 Live Demo
               </button>
             </div>
+            
           </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/task_logo.png"
+                alt="project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Task Manager</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href =
+                    'https://github.com/jwang0521/task-manager'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://task-manager-jade-psi.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
         </div>
       </div>
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href = './#contact'"
       />
     </section>
     <section id="contact">
